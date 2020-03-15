@@ -49,11 +49,11 @@ public class User {
   }
 
 
-  public String getAvater() {
+  public String getAvatar() {
     return avatar;
   }
 
-  public void setAvater(String avatar) {
+  public void setAvatar(String avatar) {
     this.avatar = avatar;
   }
 

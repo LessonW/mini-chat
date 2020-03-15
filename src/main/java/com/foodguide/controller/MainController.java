@@ -45,7 +45,7 @@ public class MainController {
         User user=new User();
 
         if(userService.selectByopenid(openid)==null){
-            user.setAvater(avatar);
+            user.setAvatar(avatar);
             user.setOpenid(openid);
             user.setNickname(nickName);
             //插入数据库
@@ -72,7 +72,7 @@ public class MainController {
 
     //添加用户
     @RequestMapping("/adduser")
-    public User addUser(User user) {
+    public User addUser(@PathVariable User user) {
         userService.addUser(user);
         return user;
     }
@@ -97,23 +97,23 @@ public class MainController {
      */
     //菜谱id查询被收藏
     @RequestMapping("/fav/menuid/{id}")
-    public List<Favorite> selectfavBymenuid(int id){
+    public List<Favorite> selectfavBymenuid(@PathVariable int id){
         return favoriteService.selectfavBymenuid(id);
     }
     //查询用户收藏的菜谱
     @RequestMapping("/fav/userid/{id}")
-    List<Favorite> selectfavByuserid(int id){
+    List<Favorite> selectfavByuserid(@PathVariable int id){
         return favoriteService.selectfavByuserid(id);
     }
     //添加收藏
     @RequestMapping("/addfav")
-    int addFav(int menuid,int userid){
+    int addFav(@PathVariable int menuid,@PathVariable int userid){
         favoriteService.addFav(menuid,userid);
         return menuid;
     }
     //取消收藏
     @RequestMapping("/delfav")
-    int delFav(int menuid,int userid){
+    int delFav(@PathVariable int menuid,@PathVariable int userid){
         favoriteService.delFav(menuid,userid);
         return menuid;
     }
@@ -123,24 +123,24 @@ public class MainController {
      */
     //菜谱id查询被点赞
     @RequestMapping("/star/menuid/{id}")
-    public List<Star> selectStarBymenuid(int id){
+    public List<Star> selectStarBymenuid(@PathVariable int id){
         return starService.selectStarBymenuid(id);
     }
     //查询用户点赞的菜谱
     @RequestMapping("/star/userid/{id}")
-    List<Star> selectStarByuserid(int id){
+    List<Star> selectStarByuserid(@PathVariable int id){
         return starService.selectStarByuserid(id);
     }
 
     //点赞
     @RequestMapping("/addstar")
-    int addstaa(int menuid,int userid){
+    int addstaa(@PathVariable int menuid,@PathVariable int userid){
         starService.addstar(menuid,userid);
         return menuid;
     }
     //取消点赞
     @RequestMapping("/delstar")
-    int delstar(int menuid,int userid){
+    int delstar(@PathVariable int menuid,@PathVariable int userid){
         starService.delstar(menuid,userid);
         return menuid;
     }
@@ -151,24 +151,24 @@ public class MainController {
      * 关系表（粉丝表）相关接口
      */
     //查询用户粉丝
-    @RequestMapping("/rela?fansid={id}")
-    List<Relation> selectRelByfansid(int id){
+    @RequestMapping("/rela/fansid/{id}")
+    List<Menu> selectRelByfansid(@PathVariable int id){
         return relationService.selectRelByfansid(id);
     }
     //查询用户关注
     @RequestMapping("/rela?userid={id}")
-    List<Relation> selectRelByuserid(int id){
+    List<Relation> selectRelByuserid(@PathVariable int id){
         return relationService.selectRelByuserid(id);
     }
     //添加关注
     @RequestMapping("/addrela")
-    String addfans(int userid,int fansid){
+    String addfans(@PathVariable int userid,@PathVariable int fansid){
         relationService.addfans(userid,fansid);
         return  "添加了"+userid;
     }
     //取消关注
     @RequestMapping("/delrela")
-    String  delfans(int  userid,int fansid){
+    String  delfans(@PathVariable int  userid,@PathVariable int fansid){
         relationService.delfans(userid,fansid);
         return "取消了对"+userid+"关注";
     }
@@ -196,13 +196,13 @@ public class MainController {
 
     //按用户查询菜谱
     @RequestMapping("/search/userid/{id}")
-    public List<Menu> selectMenuByuserid(int id) {
+    public List<Menu> selectMenuByuserid(@PathVariable int id) {
         return menuService.selectMenuByuserid(id);
     }
 
     //按分类查询菜谱
     @RequestMapping("/search/sortid/{id}")
-    public List<Menu> selectMenuBysortid(int id) {
+    public List<Menu> selectMenuBysortid(@PathVariable int id) {
         return menuService.selectMenuBysortid(id);
     }
 
@@ -218,7 +218,7 @@ public class MainController {
 
     //删除菜谱
     @RequestMapping("/delmenu")
-    public int delMenu(int id) {
+    public int delMenu(@PathVariable int id) {
         menuService.delMenu(id);
         return id;
     }

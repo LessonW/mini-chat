@@ -2,11 +2,12 @@ package com.foodguide.pojo;
 
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 public class User2 {
 
   private long id;
-  private JSON name;
+  private JSONObject name;
 
 
   public long getId() {
@@ -18,11 +19,11 @@ public class User2 {
   }
 
 
-  public JSON getName() {
+  public JSONObject getName() {
     return name;
   }
 
-  public void setName(JSON name) {
+  public void setName(JSONObject name) {
     this.name = name;
   }
 
