@@ -1,0 +1,20 @@
+/* pages/sort/sort.wxss */
+.indexfloor .floor_group .floor_title image {
+  width: 100%;
+}
+.indexfloor .floor_group .floor_list navigator {
+  float: left;
+  width: 33.33%;
+  /*后四个超链*/
+}
+.indexfloor .floor_group .floor_list navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+}
+.indexfloor .floor_group .floor_list navigator:nth-child(2),
+.indexfloor .floor_group .floor_list navigator:nth-child(3) {
+  border-bottom: 1rpx solid #fff;
+}
+.indexfloor .floor_group .floor_list navigator image {
+  height: 100%;
+  width: 100%;
+}

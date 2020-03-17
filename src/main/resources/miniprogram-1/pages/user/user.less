@@ -1,0 +1,95 @@
+/* pages/user/user.wxss */
+.userinfo{
+    .img_wrap{
+        margin-top: 10rpx;
+        display: flex;
+          left: 50%;
+          top: 20%;
+          text-align: center;
+        .username{
+            padding-left: 30rpx;
+            display: flex;
+            font-size: 40rpx;
+            margin-top: 25rpx;
+        }
+        image{
+            margin-left: 60rpx;
+            display: flex;
+            width: 150rpx;
+            height: 150rpx;
+            border-radius: 50%;
+
+        }
+    }
+    
+    .button_wrap{
+        margin-top: 20rpx;
+        display: flex;
+        background-color: #fff;
+
+        navigator{ 
+            padding: 10rpx 0;
+            flex: 1;
+            text-align: center;
+            .this_num{
+                font-size: 25rpx;
+                color:red;
+            }
+            .this_name{
+                font-size: 25rpx;
+                color: #666;
+            }
+        }
+        .space{
+            flex:1
+        }
+        .fenxiang_button{
+           
+        }
+        .guanzhu_button{
+         
+        }
+    }
+
+}
+
+.goods_item{
+    border-top: 15rpx solid #ffffff;
+    display: flex;
+
+    .goods_img_wrap{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        image{
+            width: 80%;
+            border-radius: 10%;
+        }
+    }
+    .goods_info_wrap{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex: 3;
+        .goods_name{
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 1;
+            font-size: 30rpx;
+        }
+        .goods_step{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 2;
+            color: #666;
+            font-size: 20rpx;
+        }
+        .goods_user{
+            font-size: 20rpx;
+            color:#ccc;
+        }
+    }
+}

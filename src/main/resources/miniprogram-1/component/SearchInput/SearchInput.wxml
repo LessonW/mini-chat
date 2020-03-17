@@ -1,0 +1,6 @@
+
+<view class="search_input" >
+
+<navigator app-id=""><image src="../../images/icons/search.png"></image>今天想吃点什么
+</navigator>
+</view>

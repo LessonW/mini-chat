@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/sort/sort",
+    "pages/goods_list/goods_list",
+    "pages/menu/menu",
+    "pages/comment/comment",
+    "pages/user/user"
+  ],
+  "plugins": {
+    "brickLayout": {
+      "version": "0.2.0",
+      "provider": "wx3c042630f3cdc175"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#BFBFBF",
+    "backgroundColor": "#FFFFFE",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icons/home_0.png",
+        "selectedIconPath": "images/icons/home_1.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "images/icons/sort_0.png",
+        "selectedIconPath": "images/icons/sort_1.png"
+      },
+      {
+        "pagePath": "pages/comment/comment",
+        "text": "动态",
+        "iconPath": "images/icons/comment_0.png",
+        "selectedIconPath": "images/icons/comment_1.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "我的",
+        "iconPath": "images/icons/detail_0.png",
+        "selectedIconPath": "images/icons/detail_1.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+        <view wx:for="{{menulist}}"
+              wx:for-item="item1"
+              wx:for-index="index1"
+              wx:key="id"
+         class="first_tab">
+            <navigator class="goods_item" url="/pages/menu/menu?menuid={{item1.id}}">
+                <!-- 左侧图片 -->
+                <view class="goods_img_wrap">
+                    <image mode="widthFix" src="{{imgHead}}{{item1.img}}"></image>
+                </view>
+                <!-- 右侧菜谱信息 -->
+                <view class="goods_info_wrap">
+                    <view class="goods_name">{{item1.title}}</view>
+                    <view class="goods_step">{{item1.step}}</view>
+                    <view class="goods_user">{{item1.user.nickname}}</view>
+                </view>
+            </navigator>
+        </view>
+        
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">2</block>
+    <block wx:elif="{{tabs[2].isActive}}">3</block>
+</Tabs>

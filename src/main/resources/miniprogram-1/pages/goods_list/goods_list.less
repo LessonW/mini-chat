@@ -1,0 +1,42 @@
+.first_tab{
+    .goods_item{
+        border-top: 15rpx solid #ffffff;
+        display: flex;
+
+        .goods_img_wrap{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            image{
+                width: 80%;
+                border-radius: 10%;
+            }
+        }
+        .goods_info_wrap{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            flex: 3;
+            .goods_name{
+                display: -webkit-box;
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp: 1;
+                font-size: 30rpx;
+            }
+            .goods_step{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp: 2;
+                color: #666;
+                font-size: 20rpx;
+            }
+            .goods_user{
+                font-size: 20rpx;
+                color:#ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* pages/sort/sort.wxss */
+.indexfloor{
+    .floor_group{
+        .floor_title{
+            
+            image{
+                width: 100%;
+    
+            }
+        }
+        .floor_list{
+            navigator{
+                float: left;
+                width: 33.33%;
+                /*后四个超链*/
+                &:nth-last-child(-n+4){
+                height: 33.33vw*386/232/2;
+                // border-left: 1rpx solid #fff;
+            }
+            &:nth-child(2),
+            &:nth-child(3){
+                border-bottom: 1rpx solid #fff;
+            }
+                image{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

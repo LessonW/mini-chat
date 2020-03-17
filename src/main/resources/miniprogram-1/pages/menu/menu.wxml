@@ -1,0 +1,39 @@
+<view class="top_wrap">
+    <image mode="widthFix" src="{{imgHead}}{{menu.img}}">
+    </image>
+    <view class="goods_name">【{{menu.title}}】
+    </view>
+    <view class="user_info">
+        <navigator url="/pages/user/user?userid={{menu.user.id}}" class="img" hover-class="none" hover-stop-propagation="false">
+            <image mode="widthFix"  src="{{menu.user.avatar}}"></image>
+        </navigator>
+        <navigator url="/pages/user/user?userid={{menu.user.id}}"class="text"><text>{{menu.user.nickname}}</text></navigator>
+        <view class="button_guanzhu"><text>关注</text></view>
+    </view>
+</view>
+<view class="bottom_wrap">
+    <view class="material_info">
+        <view class="yongliao">用料</view>
+        <view class="material">
+            <view class="name">豆瓣酱</view>
+            <view class="num">一勺</view>
+        </view>
+        <view class="material">
+            <view class="name">豆瓣酱</view>
+            <view class="num">一勺</view>
+        </view>
+        <view class="material">
+            <view class="name">豆瓣酱</view>
+            <view class="num">一勺</view>
+        </view>
+    </view>
+    <view class="step">
+        <view class="step_num">步骤{{asdas}}</view>
+        <view class="step_detail">内容内容内容内容内容内容内容内容内容内容内容内容</view>
+    </view>
+    <view class="step">
+        <view class="step_num">步骤一</view>
+        <view class="step_detail">内容内容内容内容内容内容内容内容内容内容内容内容</view>
+    </view>
+
+</view>

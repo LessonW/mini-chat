@@ -1,0 +1,119 @@
+/* pages/menu/menu.wxss */
+.top_wrap image {
+  width: 100%;
+}
+.top_wrap .goods_name {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 15rpx;
+  margin-bottom: 25rpx;
+  font-size: 60rpx;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+.top_wrap .user_info {
+  margin-left: 15rpx;
+  margin-right: 20rpx;
+  display: flex;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  height: 100rpx;
+}
+.top_wrap .user_info .img {
+  display: flex;
+  flex: 1.5;
+}
+.top_wrap .user_info .img image {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  margin-left: 70rpx;
+  border-radius: 50%;
+}
+.top_wrap .user_info .text {
+  display: flex;
+  margin-left: 10rpx;
+  flex: 3;
+  float: left;
+}
+.top_wrap .user_info .text text{
+  color: #666;
+  height: 50%;
+  margin-top: 15rpx;
+  
+}
+.top_wrap .user_info .button_guanzhu {
+  flex: 1.5;
+  float: right;
+
+  display: flex;
+}
+.top_wrap .user_info .button_guanzhu text{
+  
+  border-radius: 15%;
+  margin-right: 15rpx;
+  border: 1rpx solid orangered;
+  margin-top: 10px;
+  height: 18px;
+  width: 30px;
+  float: right;
+  text-align: center;
+  color: orangered;
+  font-size: 30rpx;
+
+}
+
+.bottom_wrap {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.bottom_wrap .material_info {
+  padding-bottom: 30rpx;
+}
+.bottom_wrap .material_info .yongliao {
+  padding-top: 40rpx;
+  height: 70rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+  border-bottom: 1px solid #ccc;
+}
+.bottom_wrap .material_info .material {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.bottom_wrap .material_info .material .name {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  flex: 1;
+  font-size: 35rpx;
+}
+.bottom_wrap .material_info .material .num {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 35rpx;
+  color: #666;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.bottom_wrap .step {
+  padding-top: 15rpx;
+}
+.bottom_wrap .step .step_num {
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+.bottom_wrap .step .step_detail {
+  font-size: 35rpx;
+  color: #666;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,45 @@
+<!-- <view class="indexfloor">
+    <view class="floor_group"
+    wx:for="{{floorList}}"
+    wx:for-item="item1"
+    wx:for-index="index1"
+    wx:key="floor_title">
+        <view class="floor_title">
+            <image mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+        </view>
+        <view class="floor_list">
+            <navigator
+            wx:for="{{item1.product_list}}"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            wx:key="name">
+                <image mode="{{index2===0?'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"></image>
+            </navigator>
+        </view>
+    </view>
+</view> -->
+
+<!-- -->
+<view class="indexfloor">
+    <view class="floor_group"
+    wx:for="{{sortList}}"
+    wx:for-item="item1"
+    wx:for-index="index1"
+    wx:key="floor_title">
+        <!-- 标题 -->
+        <view class="floor_title">
+        
+            {{item1.mainsort}}
+        </view>
+        <!-- 内容 -->
+        <view class="floor_list">
+            <navigator
+            wx:for="{{item1.sortlist}}"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            wx:key="name" url="/pages/goods_list/goods_list?sortid={{item2.id}}">
+                <image mode="{{index2===0?'widthFix':'scaleToFill'}}" src="{{imgHead}}{{item2.img}}">{{item2.secondsort}}</image>
+            </navigator>
+        </view>
+    </view>
+</view>

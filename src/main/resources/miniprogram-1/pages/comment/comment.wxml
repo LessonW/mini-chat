@@ -1,0 +1,17 @@
+<view class="info"
+wx:for="{{favList}}"
+    wx:for-item="item"
+    wx:for-index="index"
+    wx:key="id">
+  <view class="user">
+    <image src="{{item.user.avatar}}"></image>
+    <view class="name">{{item.user.nickname}}</view>
+  </view>
+  <image class="menuimg" mode="widthFix" src="{{imgHead}}{{item.img}}"></image>
+  <view class="star">
+    <image class="img1" src="../../images/icons/dianzan_0.png"></image><text>1222</text>
+    <image class="img2" src="../../images/icons/shoucang_0.png"></image><text>234234</text>
+    <image class="img3" src="../../images/icons/fenxiang_0.png"></image>
+  </view>
+  <view class="title">{{item.title}}</view>
+</view>

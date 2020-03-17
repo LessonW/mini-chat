@@ -1,0 +1,61 @@
+
+<view class="userinfo_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="image_wrap">
+    <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+    <view class="userinfo">
+      <image class="user_img" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{dbuser.nickname}}</view>
+    </view>
+  </view>
+  <view wx:else class="userbtn" plain>
+    
+  <button
+  type="primary" plain 
+  open-type="getUserInfo" 
+  bindgetuserinfo="handleGetUserInfo">登录</button>
+
+  </view>
+</view>
+
+<view class="user_content">
+
+  <view class="user_main">
+    <!-- 我的作品 -->
+    <view class="user_menu">
+      <navigator>
+        <view class="this_num">0</view>
+        <view class="this_name">作品</view>
+      </navigator>
+    
+      <navigator>
+        <view class="this_num">0</view>
+        <view class="this_name">收藏</view>
+      </navigator>
+  
+      <navigator>
+        <view class="this_num">0</view>
+        <view class="this_name">粉丝</view>
+      </navigator>
+  
+      <navigator>
+        <view class="this_num">2</view>
+        <view class="this_name">关注</view>
+      </navigator>
+    </view>
+
+    <view class="appinfo">
+      <view class="appinfo_item app_contact">
+        <text>联系客服</text>
+        <text>200-20023-232</text>
+        
+      </view>
+      <view class="appinfo_item">意见反馈</view>
+      <view class="appinfo_item">关于我们</view>
+    </view>
+    <view class="app_button">
+      分享
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,31 @@
+
+<view class="searchinput">
+<SearchInput></SearchInput>
+<image class="banner" mode="widthFix" src="../../images/icons/banner3.jpg">
+</image>
+
+<view class="text">
+    为您推荐
+</view>
+</view>
+
+<view class='water-fall'>
+    <view class="item-box" wx:for="{{menuList}}" wx:key="id">
+      <text class='tag'>{{item.title}}</text>
+      <navigator url="/pages/menu/menu?menuid={{item.id}}"><image wx:if="{{imgHead}}{{item.img}}" class='pro-img' src="{{imgHead}}{{item.img}}" mode="widthFix"></image></navigator>
+      <view class='two-line-hide-txt'>{{item.prodesc}}</view>
+      <view class='bt-info'>
+      <!-- 这里的 url还差用户的菜谱列表 -->
+        <navigator url="/pages/user/user?userid={{item.user.id}}" class='user-info'>
+          <image class='user-icon' src='{{item.user.avatar}}'></image>
+          <text class='user-nike'>{{item.user.nickname}}</text>
+        </navigator>
+        <view class='zan-info'>
+          <image class='zan-icon' src='../../images/icons/shoucang_0.png'></image>
+          <text class='zan-num'>{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+</view>
+<!-- 这是 css 实现瀑布流 -->
+<!-- https://www.cnblogs.com/muzs/p/11158112.html -->
